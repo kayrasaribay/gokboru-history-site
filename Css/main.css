@@ -1,0 +1,166 @@
+body{
+    background-color: #0f0f0f;
+}
+main{
+    color: aliceblue;
+}
+nav{
+    padding-top: 0.8rem;
+    padding-bottom:0.8rem;
+    background-color: rgb(72, 9, 9);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+button{
+    color: aliceblue;
+}
+.navbar-brand{
+    color: aliceblue;
+}
+.navbar-brand h1{
+    font-family: 'Cinzel',serif;
+}
+.navbar-brand:hover{
+    color: rgb(164, 232, 255);
+}
+
+
+.navbar-nav li{
+    list-style-type: none;
+}
+.navbar .nav-link{
+    font-family: 'Cinzel',serif;
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+.navbar .nav-link:hover{
+    color: rgb(164, 232, 255);
+}
+
+
+.navbar .dropdown-menu{
+    background-color: rgb(72,9,9);
+    position: absolute;
+    z-index: 2;
+}
+.dropdown-item{
+    color: aliceblue;
+}
+.navbar .dropdown-toggle.show{
+    color: rgb(164,232,255);
+}
+.dropdown-menu li{
+    border-bottom:1px solid rgba(240, 248, 255, 0.3)
+}
+.dropdown-menu li:last-child{
+    border-bottom: none;
+}
+
+
+#main-page-first-img{
+    margin-top: 0;
+}
+
+#first-section h2{
+    margin-top: 1rem;
+    font-family: 'Cinzel';
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#first-section p{
+    font-size: 0.8rem;
+    font-family: 'Cinzel';
+    color: aliceblue;
+    text-align: center;
+}
+
+
+#cards{
+    margin-top:0;
+}
+#cards h2{
+    color: rgb(137, 20, 20);
+    font-family: 'Cinzel',serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    
+}
+#main-card{
+    background-color:#000 !important;
+}
+#cards img{
+    width: 384px;
+    height: 300px;
+}
+#cards .card{
+    background-color: rgb(72,9,9);
+    height: 500px;
+    max-width: 25rem;
+    border: 3px solid aliceblue;
+}
+.card-title{
+    color: rgb(137, 20, 20);
+    font-family: 'Cinzel';
+}
+.card-text{
+    color: aliceblue;
+}
+#cards .card-img-top{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+
+#second-section h2{
+    font-family: 'Cinzel';
+    text-align: center;
+    color: rgb(137,20,20);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#big-map{
+    width: 78vw;
+    height: 45vw;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    margin-bottom: 8rem;
+}
+ 
+footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+#footer-brand{
+    font-family:'Cinzel', serif;
+    color: rgb(137,20,20);
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+
+footer h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    margin : 1rem 0 1rem 0;
+    text-decoration: underline;
+    color: aliceblue; 
+}
+
+.social-icons i{
+    font-size: 1.8rem;
+    margin-right: 5px;
+    color: aliceblue;
+}
+.social-icons a:hover i{
+    color: rgb(192, 52, 52) !important;
+}

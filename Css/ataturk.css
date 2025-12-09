@@ -1,0 +1,104 @@
+.ata-title {
+    font-family: 'Cinzel', serif;
+    color: aliceblue;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.ata-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.img-frame {
+    padding: 10px;
+    border: 2px solid rgb(72, 9, 9); 
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.ata-img {
+    max-height: 500px;
+    object-fit: cover;
+    filter: sepia(0.2) contrast(1.1); 
+}
+
+.custom-quote {
+    border-left: 4px solid rgb(164, 232, 255); 
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+}
+
+.divider-custom {
+    width: 150px;
+    height: 3px;
+    background-color: rgb(72, 9, 9);
+    margin-top: 2rem;
+    border-radius: 2px;
+}
+
+
+.content-box {
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgba(164, 232, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.section-header {
+    font-family: 'Cinzel', serif;
+    color: aliceblue;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.bio-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    line-height: 1.8; 
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify; 
+}
+
+.bio-text strong {
+    color: rgb(164, 232, 255);
+}
+
+/* --- TABLO STİLLERİ --- */
+.custom-table thead th {
+    background-color: rgb(72, 9, 9) !important; 
+    color: aliceblue !important;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.custom-table tbody td {
+    background-color: rgb(30, 30, 30) !important;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-table tbody tr:hover td {
+    background-color: rgb(50, 50, 50) !important; 
+    color: rgb(164, 232, 255);
+    cursor: default;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+}
+
+.text-turkuaz {
+    color: rgb(164, 232, 255) !important;
+}

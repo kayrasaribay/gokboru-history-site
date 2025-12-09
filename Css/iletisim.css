@@ -1,0 +1,47 @@
+#gonder{
+    margin-top: 2rem;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    
+}
+
+#main-title{
+    font-family: 'Cinzel';
+    color: rgb(137,20,20);
+}
+
+#first-col{
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    background-color: rgb(72,9,9);
+}
+
+.contact-info-box{
+    background-color: rgb(72, 9, 9); 
+    color: aliceblue;
+    padding: 2.5rem; 
+    border-radius: 10px;
+    border: 2px solid aliceblue; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    height: 100%; 
+}
+
+.contact-info-box .info-title{
+    font-family: 'Cinzel';
+    border-bottom: 1px solid aliceblue;
+
+}
+
+.contact-info-box h5 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    margin-bottom: 0.2rem;
+}
+
+.contact-info-box p {
+    color: rgba(255, 255, 255, 0.8); /* Daha yumuşak beyaz */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+}
+
