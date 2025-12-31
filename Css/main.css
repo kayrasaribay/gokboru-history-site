@@ -164,3 +164,34 @@ footer h3 {
 .social-icons a:hover i{
     color: rgb(192, 52, 52) !important;
 }
+
+
+.navbar {
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.95) !important; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.stat-card, .accordion-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+.zoomable:hover {
+    transform: scale(1.02);
+}

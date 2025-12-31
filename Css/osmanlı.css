@@ -1,0 +1,159 @@
+/* --- GENEL AYARLAR --- */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #a88a2a;
+    --card-bg: #141414;
+    --darker-bg: #0a0a0a;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.border-gold {
+    border: 2px solid var(--gold);
+}
+
+.border-gold-subtle {
+    border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+/* --- HERO BÖLÜMÜ --- */
+.osmanli-hero {
+    position: relative;
+    height: 60vh; /* Yükseklik biraz azaltıldı */
+    /* Arka plan resmi olmadığı için elindeki haritayı koyu bir filtreyle kullanıyoruz */
+    background: url('/img/ortelius-renkli.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Haritanın üzerine koyu bir katman atarak karartıyoruz */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(10,10,10,1));
+}
+
+.z-index-1 { z-index: 1; }
+
+.arabic-text {
+    font-family: "Amiri", serif; /* Google Fonts'tan eklediğimiz Arapça fontu */
+    font-size: 3rem;
+    margin-top: -10px;
+}
+
+/* --- DEVLET KÜNYESİ (IDENTITY CARD) --- */
+.identity-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    overflow: hidden; /* Köşelerin yuvarlak kalması için */
+}
+
+/* Sol Taraf (Görseller) */
+.identity-visuals {
+    background-color: var(--darker-bg);
+    border-right: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.flag-shadow {
+    filter: drop-shadow(0 0 15px rgba(200, 0, 0, 0.4)); /* Bayrağa hafif kırmızı parıltı */
+}
+
+.map-frame img {
+    border: 1px solid var(--dark-gold);
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+.map-frame img:hover {
+    opacity: 1;
+    border-color: var(--gold);
+    transform: scale(1.02);
+}
+
+/* Sağ Taraf (Tablo) */
+.identity-info {
+    background-color: var(--card-bg);
+}
+
+.custom-table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #ddd;
+    --bs-table-striped-bg: rgba(212, 175, 55, 0.03); /* Çok hafif altın sarısı şerit */
+    border-color: rgba(212, 175, 55, 0.2);
+}
+
+.custom-table th {
+    font-weight: bold;
+    border-right: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 15px;
+}
+
+.custom-table td {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+}
+
+.capital-list li {
+    margin-bottom: 8px;
+}
+
+/* --- AKORDİYON AYARLARI --- */
+.accordion-item {
+    background-color: transparent !important;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    margin-bottom: 15px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--darker-bg) !important;
+    color: var(--gold) !important;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2a0a0a !important; /* Açılınca koyu kırmızımsı */
+    color: #fff !important;
+    border-bottom: 1px solid var(--gold);
+}
+
+.accordion-body {
+    background-color: var(--card-bg);
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+.period-icon {
+    margin-right: 15px;
+    font-size: 1.4rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 991px) {
+    .identity-visuals {
+        border-right: none;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .osmanli-hero {
+        height: 50vh;
+    }
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    .arabic-text {
+        font-size: 2rem;
+    }
+}
