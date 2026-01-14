@@ -45,3 +45,68 @@
     line-height: 1.4;
 }
 
+/* --- BAŞARI MODALI TASARIMI --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Arka planı karartma */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px); /* Hafif buzlu cam efekti */
+}
+
+.modal-content {
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(164, 232, 255); /* Turkuaz kenarlık */
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 30px rgba(164, 232, 255, 0.2);
+    animation: slideDown 0.4s ease-out;
+}
+
+.modal-icon {
+    font-size: 4rem;
+    color: rgb(46, 204, 113); /* Başarı yeşili */
+    margin-bottom: 1rem;
+}
+
+.modal-title {
+    font-family: 'Cinzel', serif;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.modal-message {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+#modal-close-btn {
+    color: aliceblue !important; /* Yazı rengini aliceblue yaptık */
+    border: 2px solid rgb(164, 232, 255);
+    background-color: transparent;
+    padding: 10px 25px;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s ease;
+}
+
+#modal-close-btn:hover {
+    background-color: rgb(164, 232, 255);
+    color: rgb(20, 20, 20) !important; /* Üzerine gelince okunabilirlik için yazı koyulaşır */
+}
+
+/* Modalı yukarıdan aşağı kaydıran animasyon */
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
