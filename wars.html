@@ -24,6 +24,19 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
                         <li class="nav-item"><a href="wars.html" class="nav-link active">Savaşlar</a></li>
+                        <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" >Türk Medeniyetleri</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Büyük Hun İmparatorluğu</a></li>
+                                    <li><a href="#" class="dropdown-item">Avrupa Hunları</a></li>
+                                    <li><a href="#" class="dropdown-item">Göktürk Kağanlığı</a></li>
+                                    <li><a href="#" class="dropdown-item">Uygurlar</a></li>
+                                    <li><a href="#" class="dropdown-item">Büyük Selçuklu</a></li>
+                                    <li><a href="#" class="dropdown-item">Anadolu Selçuklu</a></li>
+                                    <li><a href="osmanlı.html" class="dropdown-item">Osmanlı İmparatorluğu</a></li>
+                                    <li><a href="#" class="dropdown-item">Türkiye Cumhuriyeti</a></li>
+                                </ul>
+                        </li>
                         <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
                     </ul>
                 </div>
@@ -34,12 +47,12 @@
     <main class="container mt-5">
         
         <div class="text-center mb-5">
-            <h2 class="display-4 font-cinzel text-light">Türk Savaş Tarihi Haritası</h2>
+            <h2 class="display-4 font-cinzel" style="color: rgb(176, 15, 15);">Türk Savaş Tarihi Haritası</h2>
             <p class="text-turkuaz">Harita üzerindeki noktalara tıklayarak savaş detaylarını inceleyin.</p>
         </div>
 
         <div class="map-container shadow-lg mb-5">
-            <img src="/img/harita_tr.jpg" alt="Harita" class="map-image">
+            <img src="/img/tr_fiziki.jpg" alt="Harita" class="map-image">
 
             <button class="map-point" style="top: 45%; left: 85%;" onclick="loadBattle('malazgirt')" data-bs-toggle="tooltip" title="Malazgirt Savaşı">
                 <span class="pulse"></span>
@@ -55,7 +68,7 @@
         </div>
 
         <section id="battle-details" class="battle-card p-4 fade-in">
-            <h2 id="battle-title" class="text-center font-cinzel text-turkuaz mb-4">Malazgirt Meydan Muharebesi</h2>
+            <h2 id="battle-title" class="text-center font-cinzel text-danger mb-4">Malazgirt Meydan Muharebesi</h2>
             
             <div class="row justify-content-center align-items-center mb-4 text-center">
                 <div class="col-4">
@@ -75,8 +88,8 @@
                 <table class="table table-dark table-bordered custom-table text-center">
                     <thead>
                         <tr>
-                            <th class="w-50 text-turkuaz">Türk Ordusu</th>
-                            <th class="bg-dark text-secondary">Kategori</th>
+                            <th class="w-50 text-danger">Türk Ordusu</th>
+                            <th class="fw-bold">Kategori</th>
                             <th class="w-50 text-danger">Düşman Kuvvetleri</th>
                         </tr>
                     </thead>
@@ -107,17 +120,59 @@
                 </table>
             </div>
             
-            <div class="text-center mt-3 text-muted">
-                <span id="battle-date"><i class="bi bi-calendar3"></i> 26 Ağustos 1071</span> | 
-                <span id="battle-loc"><i class="bi bi-geo-alt-fill"></i> Muş, Malazgirt Ovası</span>
+            <div class="text-center mt-3 text-muted" >
+                <span id="battle-date" class="white_color"><i class="bi bi-calendar3 white_color"></i> 26 Ağustos 1071</span> | 
+                <span id="battle-loc" class="white_color"><i class="bi bi-geo-alt-fill white_color" ></i> Muş, Malazgirt Ovası</span>
             </div>
         </section>
 
     </main>
 
-    <footer class="mt-5">
-        <div class="container-fluid text-center">
-            <p class="text-muted py-3">©2025 Gökbörü Tarih Portalı</p>
+    <footer>
+        <div id="Footer-container" class="container-fluid">
+            <div class="row justify-content-between">  
+
+                <div class="col-auto">
+                    <h1 id="footer-brand">Gökbörü</h1>
+                </div>
+
+                <div class="col-auto" id="footer-links">
+                    <h3>Hızlı Erişim</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Kahramanlar</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Türk Medeniyetleri</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Unutulmaz ilkler</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Site Haritası</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-auto legal-links">
+                    <h3>Yasal</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Gizlilik Politikası</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Kullanım Şartları</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-light">Kaynaklar</a></li>
+                    </ul>
+                </div>
+                                    
+                <div class="col-auto social-icons me-5">
+                    <h3>Sosyal medya</h3>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3"><a href="https://www.instagram.com/mkayra.saribay/" class="text-decoration-none text-light" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                        <li class="me-3"><a href="https://github.com/kayrasaribay" class="text-decoration-none text-light" target="_blank"><i class="bi bi-github"></i></a></li>
+                        <li class="me-3"><a href="https://www.linkedin.com/in/kayra-sarıbay-522859389/" class="text-decoration-none text-light" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="me-3"><a href="https://x.com/elonmusk" class="text-decoration-none text-light" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between w-100 mt-5 border-top pt-3 border-secondary">
+                <p class="mb-2 text-light">&copy;2025 Kayra Sarıbay. Tüm hakları saklıdır.</p>
+                <div class="d-flex mb-2">
+                    <a href="#" class="text-decoration-none text-light me-3">Terms of use</a>
+                    <a href="#" class="text-decoration-none text-light">Gizlilik</a>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
