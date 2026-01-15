@@ -101,17 +101,18 @@ button{
     height: 300px;
 }
 #cards .card{
-    background-color: rgb(72,9,9);
+    background-color: rgb(42, 39, 39);
     height: 500px;
     max-width: 25rem;
-    border: 3px solid aliceblue;
+    border: 3px solid rgb(101, 12, 12);
 }
 .card-title{
-    color: rgb(137, 20, 20);
+    color: #c60b0b;
     font-family: 'Cinzel';
 }
 .card-text{
-    color: aliceblue;
+    color: rgb(212, 224, 235);
+    font-size: 1.2rem;
 }
 #cards .card-img-top{
     height: 260px;
