@@ -144,7 +144,7 @@ button{
     margin-left: auto;
     margin-right: auto;
 }
- 
+                        /* FOOTER CSS*/
 footer{
     background-color: black;
     color: aliceblue;
@@ -284,7 +284,7 @@ footer h3 {
     overflow: visible; 
 }
 
-/* Ok Butonlarının Genel Ayarı */
+/* Butonlarının Genel Ayarı */
 
 .carousel-control-prev, .carousel-control-next {
     width: 5%;       

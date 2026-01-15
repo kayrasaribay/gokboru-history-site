@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Navbar Scroll Efekti (Tüm sayfalarda çalışır)
+    // 1. Navbar Scroll Efekti 
     const navbar = document.getElementById('navbar');
     if(navbar) {
         window.addEventListener('scroll', () => {
@@ -30,29 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             /* ANASAYFA FONKSİYONLARI */
 
 function initIndexPage() {
-    // Resim Büyütme
-    const modal = document.getElementById('modal-container');
-    const modalImg = document.getElementById('modal-image');
-    const closeBtn = document.getElementById('close-btn');
-
-    if (modal) {
-        document.querySelectorAll('.zoomable').forEach(img => {
-            img.addEventListener('click', function() {
-                modal.style.display = 'flex';
-                modalImg.src = this.src; 
-            });
-        });
-
-        closeBtn.onclick = () => modal.style.display = 'none';
-        modal.onclick = (e) => {
-            if (e.target === modal) modal.style.display = 'none';
-        };
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Escape" && modal.style.display === 'flex') {
-                modal.style.display = 'none';
-            }
-        });
-    }
 
                     // ZAMAN ÇİZELGESİ 
 
