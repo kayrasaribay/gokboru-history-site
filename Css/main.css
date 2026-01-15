@@ -134,12 +134,12 @@ button{
 
 #big-map {
     width: 100% !important;
-    max-width: 1400px !important; /* 1000px'den 1400px'e çıkardık, daha geniş olacak */
+    max-width: 1400px !important; 
     height: auto !important;
-    aspect-ratio: 16 / 9; /* Oranı korur */
+    aspect-ratio: 16 / 9; 
     border: 2px solid rgb(137, 20, 20);
     border-radius: 10px;
-    margin-bottom: 3rem; /* Alt boşluğu biraz azalttık, daha dengeli durur */
+    margin-bottom: 3rem; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -207,36 +207,36 @@ footer h3 {
 }
 
 
-/* --- ZAMAN ÇİZELGESİ (TIMELINE) STİLLERİ --- */
+/* --- ZAMAN ÇİZELGESİ STİLLERİ --- */
 
-/* Slider Çubuğu (Yol) */
+/* Slider Çubuğu  */
 .custom-range {
     height: 10px;
-    background: rgb(72, 9, 9); /* Koyu Kırmızı */
+    background: rgb(72, 9, 9); 
     border-radius: 5px;
     outline: none;
     opacity: 0.9;
     transition: opacity .2s;
-    appearance: none; /* Varsayılan tarayıcı stilini kaldır */
+    appearance: none;
     -webkit-appearance: none;
     width: 100%;
 }
 
-/* Slider Yuvarlağı (Thumb - Chrome/Safari) */
+/* Slider Yuvarlağı  */
 .custom-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: rgb(164, 232, 255); /* Turkuaz */
+    background: rgb(164, 232, 255); 
     cursor: pointer;
     box-shadow: 0 0 10px rgba(164, 232, 255, 0.8);
     border: 2px solid aliceblue;
-    margin-top: -8px; /* Ortalamak için */
+    margin-top: -8px; 
 }
 
-/* Slider Yuvarlağı (Thumb - Firefox) */
+
 .custom-range::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -247,6 +247,7 @@ footer h3 {
 }
 
 /* Yıl Etiketleri */
+
 .timeline-labels span {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.6);
@@ -277,42 +278,44 @@ footer h3 {
 /* --- CAROUSEL VE OK DÜZENLEMESİ --- */
 
 #history-carousel {
-    max-width: 1350px; /* Genişliği biraz kıstık ki yanlarda oklara yer kalsın */
-    margin: 0 auto;    /* Ortala */
+    max-width: 1350px; 
+    margin: 0 auto;    
     position: relative;
-    overflow: visible; /* Okların kutunun dışına taşmasına izin ver */
+    overflow: visible; 
 }
 
 /* Ok Butonlarının Genel Ayarı */
+
 .carousel-control-prev, .carousel-control-next {
-    width: 5%;        /* Tıklama alanı genişliği */
-    opacity: 1;       /* Her zaman görünür olsun (silik olmasın) */
-    z-index: 999;     /* Kartların üzerine çıkması için en yüksek katman */
+    width: 5%;       
+    opacity: 1;      
+    z-index: 999;
 }
 
-/* Sol Ok Konumu (Kutunun soluna yapıştır) */
+
 .carousel-control-prev {
-    left: -60px; /* Kutunun 60px dışına it */
+    left: -60px; 
 }
 
-/* Sağ Ok Konumu (Kutunun sağına yapıştır) */
+
 .carousel-control-next {
-    right: -60px; /* Kutunun 60px dışına it */
+    right: -60px;
 }
 
 /* Ok İkonlarının Görsel Tasarımı */
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgb(72, 9, 9);       /* Koyu Kırmızı Arka Plan */
-    border: 2px solid rgb(164, 232, 255);  /* Turkuaz Çerçeve */
-    border-radius: 50%;                    /* Yuvarlak yap */
-    width: 4.5rem;                           /* İkon büyüklüğü */
+    background-color: rgb(72, 9, 9);       
+    border: 2px solid rgb(164, 232, 255);  
+    border-radius: 50%;                    
+    width: 4.5rem;                           
     height: 4rem;
-    background-size: 50%;                  /* Ok işaretini ortalar */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);  /* Hafif gölge */
+    background-size: 50%;                  
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     transition: transform 0.3s ease;
 }
 
-/* Okların üzerine gelince büyüme efekti */
+
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
     transform: scale(1.2);
